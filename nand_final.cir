@@ -1,0 +1,29 @@
+* C:\Users\user\Desktop\ng\nand_final.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 02/10/22 21:21:23
+
+.lib "sky130_fd_pr/Desktop/ng/sky130_fd_pr/models/sky130.lib.spice" tt
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+xM1  Net-_M1-Pad1_ InA OUT Net-_M1-Pad1_ sky130_fd_pr__pfet_01v8 W=2.5 L=0.5 M=1		
+xM2  OUT InB Net-_M1-Pad1_ Net-_M1-Pad1_ sky130_fd_pr__pfet_01v8 W=2.5 L=0.5 M=1		
+xM3  OUT InA Net-_M3-Pad3_ Net-_M3-Pad3_ sky130_fd_pr__nfet_01v8 W=1 L=0.5 M=1		
+xM4  Net-_M3-Pad3_ InB GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.5 M=1	
+U1  InA PORT pulse(0 1.8 0us 0us 0us 5us 10us)		
+U2  InB PORT pulse(0 1.8 0us 0us 0us 5us 10us)				
+v1  Net-_M1-Pad1_ GND DC 1.8v
+
+.trans 0.1us 20us
+.control
+run
+plot V(OUT)
+plot V(InA)
+plot V(InB)
+
+		
+.endc		
+
+.end
