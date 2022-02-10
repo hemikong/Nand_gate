@@ -46,14 +46,15 @@ A CMOS NAND Gate circuit uses 4 transistors. In Figure (a), M1 and M2 are PMOS t
 
 
 
-Figure(a)
+
 
 
 
 # Circuit Design
 
 
-Figure(c)
+nand_circuit
+
 
 # The Netlist generated is as shown below :
 * C:\Users\user\Desktop\ng\nand_final.cir
