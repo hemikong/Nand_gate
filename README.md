@@ -2,25 +2,43 @@
 
 The purpose of this paper is to design the NAND gate using a spice simulator called ngspice,opensource EDA tool called esim and sky130 PDK.
 
-To explore the project you can git clone using the command : https://github.com/Sammati-07/OR_Gate
+To explore the project you can git clone using the command : https://github.com/hemikong/Nand_gate
 
 Table of Contents
+
+
 Abstract
+
 Tool Required For Installation
+
 Circuit Details
+
 Results
+
 Obtained Output Waveforms
+
 References
+
 Author
+
+
+
 Abstract
+
 Logic gate is an electronic device that implements a Boolean Expression. These gates have either one or more than one input, but most of these gates have two inputs. Whereas output of a logic gate depends upon combination of inputs applied across it. Logic gate outputs are either true or false. True represents 1 and False represents 0. Its operation can be compared with light switch, where the bulb is either ON (1) or OFF (0) depending on switch input. Logic gates use logic to determine output (to pass or not to pass a signal). So, I have designed a logic NAND gate using CMOS in 130nm technology. CMOS gates dissipate nearly 0 power when Idle thus they are very power efficient.
 
 Tool Required For Installation
+
 eSim :https://esim.fossee.in/downloads
+
 Ngspice :https://sourceforge.net/projects/ngspice/files/
+
 Sky130 PDK :https://static.fossee.in/esim/installation-files/sky130_fd_pr.zip
+
 Circuit Details
-OR Gate is a digital logic gate that has output at logic level ‘1’ when both or any one of the input is high and is at logic level ‘0’ when both inputs are low. The OR gate is built up from basic NOR gate and an inverter at output of NOR gate. According to this, first we design CMOS NOR gate circuit, output of which is sent to Inverter to get OR gate operation.
+
+The NAND gate is a combination of an AND gate and NOT gate. They are connected in cascade form. It is also called Negated And gate. The NAND gate provides the false or low output only when their outputs is high or true.
+
 
 Step 1: Construct NAND Gate
 
@@ -77,6 +95,9 @@ Figure(d)
 References
 eSim
 CMOS Circuit design, Layout and Simulation 3rd edition By R. JACOB BAKER
+
 https://www.allaboutcircuits.com/textbook/digital/chpt-3/cmos-gate-circuitry/
+
 Author
-G R Sammati, Bachelor of Engineering in Electronics and Communication Engineering, KLE Technological University, Hubballi.
+
+Hema N Kongi, Bachelor of Engineering in Electronics and Communication Engineering, KLE Technological University, Hubballi.
