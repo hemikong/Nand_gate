@@ -61,7 +61,7 @@ nand_circuit
 
 * EESchema Netlist Version 1.1 (Spice format) creation date: 02/10/22 21:21:23
 
-.lib "sky130_fd_pr/Desktop/ng/models/sky130.lib.spice" tt
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
 * To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
  
@@ -84,7 +84,7 @@ U2  InB PORT pulse(0 1.8 0us 0us 0us 5us 10us)
 
 v1  Net-_M1-Pad1_ GND DC 1.8v
 
-.trans 0.1us 20us
+.tran 0.1us 20us
 
 .control
 
